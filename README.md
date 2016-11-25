@@ -1,65 +1,27 @@
-# auto-summarizer README
+## Auto Summarizer
 
-This is the README for your extension "auto-summarizer". After writing up a brief description, we recommend including the following sections.
+Auto Summarizer provides a handy way for you to summarize long articles for posting to your social media accounts or sharing via email. It takes large chunks of text in English and condenses it down to a consise number of words.
 
-## Features
+## Install
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+In VS Code just hit `F1` and then type `ext` and then `auto` and select Auto Summarizer.
 
-For example if there is an image subfolder under your extension project workspace:
+### Summarize content
 
-\!\[feature X\]\(images/feature-x.png\)
+Copy and paste the text you would like to summarize into the editor.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Highlight the text using `ctrl` + `A`.
 
-## Requirements
+If you are on Windows or Linux hit `shift` + `alt` + `S`.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+If you are on a Mac hit `shift` + `option` + `S`.
 
-## Extension Settings
+Optionally type in a title and hit `enter`.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+That's it!
 
-For example:
+### Configuration
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
+## Update Log
 ### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Modified this readme

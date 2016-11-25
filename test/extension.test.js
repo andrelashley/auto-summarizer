@@ -41,7 +41,7 @@ suite("Extension Tests", function() {
 
     test("Resulting template is not the same as the original template", function() {
         // arrange
-        var unmodifiedTemplate = "${summaryResults.title}\n" +
+        var unmodifiedTemplate = 
             "${summaryResults.summary}\n" +
             "Original Length ${summaryResults.originalLength}\n" +
             "Summary Length ${summaryResults.summaryLength}\n" +
@@ -57,8 +57,7 @@ suite("Extension Tests", function() {
         // act
         var result = myExtension.services.summarizeSelection(title, content);
 
-        let filledTemplate = templateCopy.replace('${summaryResults.title}', result.title);
-        filledTemplate = filledTemplate.replace('${summaryResults.summary}', result.summary);
+        let filledTemplate = templateCopy.replace('${summaryResults.summary}', result.summary);
         filledTemplate = filledTemplate.replace('${summaryResults.originalLength}', result.originalLength);
         filledTemplate = filledTemplate.replace('${summaryResults.summaryLength}', result.summaryLength);
         filledTemplate = filledTemplate.replace('${summaryResults.summaryRatio}', result.summaryRatio);

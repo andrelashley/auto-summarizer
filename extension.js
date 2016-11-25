@@ -1,8 +1,7 @@
 let vscode = require('vscode');
 let summarizer = require('node-summary');
 
-const resultsTemplate = "${summaryResults.title}\n" +
-"${summaryResults.summary}\n" +
+const resultsTemplate = "${summaryResults.summary}\n" +
 "Original Length ${summaryResults.originalLength}\n" +
 "Summary Length ${summaryResults.summaryLength}\n" +
 "Summary Ratio ${summaryResults.summaryRatio}";
@@ -28,7 +27,6 @@ let summarizeSelection = (originalTitle, originalText) => {
     });
 
     return {
-        title: originalTitle,
         originalLength: originalLength,
         summaryLength: summaryLength,
         summaryRatio: summaryRatio,
@@ -53,8 +51,7 @@ let insertText = (value) => {
 };
 
 let fillResultsTemplate = (results) => {
-    let filledTemplate = resultsTemplate.replace('${summaryResults.title}', results.title);
-    filledTemplate = filledTemplate.replace('${summaryResults.summary}', results.summary);
+    let filledTemplate = resultsTemplate.replace('${summaryResults.summary}', results.summary);
     filledTemplate = filledTemplate.replace('${summaryResults.originalLength}', results.originalLength);
     filledTemplate = filledTemplate.replace('${summaryResults.summaryLength}', results.summaryLength);
     filledTemplate = filledTemplate.replace('${summaryResults.summaryRatio}', results.summaryRatio);
